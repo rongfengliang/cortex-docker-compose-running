@@ -1,5 +1,12 @@
 version: "3"
 services:
+    haproxy:
+      image: haproxy:2.0.5-alpine
+      volumes:
+      - "./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg"
+      ports:
+      - "8404:8404"
+      - "9009:9009"
     consul:
       image: consul
       ports:

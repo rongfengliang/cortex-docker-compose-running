@@ -1,5 +1,7 @@
 # cortexproject/cortex docker-compose
 
+ > use haproxy for loadblance
+
 ## how to running
 
 * start docker-compose services
