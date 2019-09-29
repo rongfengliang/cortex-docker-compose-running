@@ -45,3 +45,10 @@ scrape_configs:
     static_configs:
     - targets: ['haproxy:8404']
 
+  - job_name: 'cortex'
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+    - targets: ['haproxy:9009']
